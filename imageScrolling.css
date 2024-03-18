@@ -3,10 +3,12 @@ body {
   width: 100vw;
   background-color: black;
   margin: 0rem;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 #image-track {
+  overflow-x: hidden;
+
   display: flex;
   gap: 4vmin;
   position: absolute;
@@ -17,6 +19,10 @@ body {
 }
 
 #image-track > .image {
+
+  overflow-x: hidden;
+
+
   width: 40vmin;
   height: 56vmin;
   object-fit: cover;
