@@ -6,15 +6,15 @@
   position: relative;
   top: 13px;
   left: 50%;
-  width: 313px;
+  width: 100%;
   transform: translate(-50%, -30%);
   display: flex;
   background-color: white;
   padding: 1px 8px 2px 8px;
-  border-radius: 30px;
+  
   overflow: hidden;
   z-index: 15;
-  height: 25px;
+  height: 55px;
 
   user-select: none;
   user-drag: none;

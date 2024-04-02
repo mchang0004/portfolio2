@@ -51,17 +51,18 @@ const updateTrackPosition = () => {
 
   track.animate(
     {
-      transform: `translate(${currentPercentage}%, -50%)`
+      transform: `translate(${currentPercentage - 20}%, -50%)`  //The subtract from current position to affect the starting position. You will also need to change this in the CSS
     },
     { duration: 1200, fill: "forwards" }
   );
 
   for (const image of track.getElementsByClassName("image")) {
-    image.animate(
-      {
-        objectPosition: `${100 + currentPercentage}% center`
-      },
-      { duration: 1200, fill: "forwards" }
+
+     image.animate(
+       {
+         objectPosition: `${50}% center`
+       },
+       { duration: 1200, fill: "forwards" }
     );
   }
 };
