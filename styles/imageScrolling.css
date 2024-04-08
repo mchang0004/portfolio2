@@ -9,6 +9,7 @@ body {
 
   overflow: hidden;
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 h1 {
@@ -26,8 +27,8 @@ h1 {
   left: 50%;
   top: 50%;
   transform: translate(-8%, -50%);         /*You will also need to change this in the script.js */
-
-
+  user-select: none;
+  draggable: false;
 
 }
 
@@ -40,6 +41,7 @@ h1 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  draggable: false;
 }
 
 
@@ -48,12 +50,14 @@ h1 {
   position: relative;
   width: 40vh;
   height: 55vh;
+  draggable: false;
 }
 
 .image-text {
   position: absolute;
   top: 100%;
   color: white;
+  draggable: false;
 }
 
 .image-link{

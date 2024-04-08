@@ -22,6 +22,8 @@ function populateImageTrack() {
     image.classList.add("image");
     image.src = data.src;
     image.alt = data.alt;
+    image.style.userSelect = "none";
+    image.draggable = false;
 
 //text
     const imageText = document.createElement("p");
