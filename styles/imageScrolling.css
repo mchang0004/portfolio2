@@ -1,0 +1,82 @@
+body {
+  background: linear-gradient(to bottom, #8a9ca8, #363d40);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+
+
+  height: 100vh;
+  width: 100vw;
+
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+
+
+
+}
+
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-8%, -50%);         /*You will also need to change this in the script.js */
+
+
+
+}
+
+/*images inside the image track*/
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.image-container {
+  text-align: center;
+  position: relative;
+  width: 40vh;
+  height: 55vh;
+}
+
+.image-text {
+  position: absolute;
+  top: 100%;
+  color: white;
+}
+
+.image-link{
+  position: relative;
+  text-align: center;
+  top: 105%;
+  font-size: 70%;
+  color: white;
+  text-decoration: underline;
+}
+
+/*
+
+Footer
+
+*/
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}

@@ -1,0 +1,84 @@
+/*
+
+Text
+
+*/
+
+body {
+  background: linear-gradient(to bottom, #8a9ca8, #363d40);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+
+
+}
+
+.main {
+
+  min-height: calc(100vh - 100px);
+  margin-bottom: 100px;
+  padding: 16px;
+  margin-top: 30px;
+  height: 100vh;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 200%;
+
+
+}
+
+p{
+  max-width: 800px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 150%;
+}
+
+.contact-me-container{
+  max-width: 800px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 150%;
+}
+
+.link {
+  color: #9cf5ff;
+}
+
+
+.link:visited {
+  color: #9cf5ff;
+}
+
+.basic-text {
+  text-align: center;
+
+  flex: 1;
+  padding: 20px;
+}
+
+.content {
+  flex: 1;
+}
+
+
+/*
+
+Footer
+
+*/
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  z-index: 25;
+}

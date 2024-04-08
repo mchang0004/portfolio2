@@ -1,0 +1,191 @@
+
+
+/*
+
+cards
+
+*/
+
+.card-container {
+
+
+  padding:16vh;
+  width: auto;
+  margin: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+
+
+img{
+  height: 100%;
+  width: 100%;
+  display: block;
+
+}
+
+.effect{
+  height: 100%;
+  width: 100%;
+/*  background: rgb(138, 168, 158, 0.5); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  border-radius: 1vh;
+/*  transition: transform 0.1s ease;        animate hover */
+  scale: 1;
+/*  backdrop-filter: contrast(100%) saturate(100%);*/
+
+
+}
+
+.effect:hover{
+  transform: scale(1.03);
+  background: transparent;
+
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* grid layout */
+  gap: 3vh;
+}
+
+.card {
+  width: 35vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+  transition: scale 1000ms;
+
+
+}
+
+@media screen and (max-width: 1024vh) {
+  #cards {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns when viewport width is smaller */
+  }
+}
+
+@media screen and (max-width: 768vh) {
+  #cards {
+    grid-template-columns: repeat(1, 1fr); /* 1 column when viewport width is even smaller */
+  }
+}
+
+@media screen and (max-width: 480vh) {
+  .card-container {
+    padding: 5vh; /* Adjust padding for smaller screens */
+  }
+}
+
+
+.card .card-front-image {               /* front card image*/
+  position: relative;
+  z-index: 2;
+
+
+}
+
+.card:hover .card-front-image {         /*on hover increase scale */
+  transform: scale(1.03);
+
+}
+
+.card .card-front-image {
+
+  transform: scale(1);
+  transition: transform 0.1s ease;        /*animate hover */
+}
+.card .card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 1vh;
+}
+
+.card-faders {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 1300ms;
+  pointer-events: none;
+}
+
+.card:hover .card-faders {      /* When hovering, do what to the fader cards...*/
+  scale: 1.03;
+  opacity: 1;
+}
+
+.card:active {                  /* When clicking, do what to the entire card...*/
+  /*scale: 1.1;*/
+}
+
+.card-fader {
+  position: absolute;
+}
+
+.card-fader:nth-child(odd) {
+  animation: fade-left 2s linear infinite;
+}
+
+.card-fader:nth-child(even) {
+  animation: fade-right 2s linear infinite;
+}
+
+.card-fader:is(:nth-child(3), :nth-child(4)) {
+  animation-delay: 550ms;
+}
+
+.card-fader:is(:nth-child(5), :nth-child(6)) {
+  animation-delay: 1300ms;
+}
+
+.card-fader:is(:nth-child(7), :nth-child(8)) {
+  animation-delay: 2050ms;
+}
+
+@keyframes fade-left {
+  from {
+    scale: 1;
+    translate: 0%;
+    opacity: 1;
+    filter: grayscale(50%);
+
+  }
+
+  to {
+    scale: 0.6;
+    translate: -25%;
+    opacity: 0;
+    filter: grayscale(100%);
+
+  }
+}
+
+@keyframes fade-right {
+  from {
+    scale: 1;
+    translate: 0%;
+    opacity: 1;
+    filter: grayscale(50%);
+
+  }
+
+  to {
+    scale: 0.6;
+    translate: 25%;
+    opacity: 0;
+    filter: grayscale(100%);
+
+  }
+}
