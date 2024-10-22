@@ -1,13 +1,13 @@
 // Define image data with src, alt, and text
 const imageData = [
-  { src: "/portfolio/images/drag.png", alt: "", text: "", link: "" },
-  { src: "/portfolio/images/illustration/Knight2.png", alt: "Knight", text: "Knight", link: "knights.html" },
-  { src: "/portfolio/images/animation/HD.gif", alt: "Helldivers", text: "Helldivers", link: "helldivers.html" },
-  { src: "/portfolio/images/illustration/Elk_small.png", alt: "Elk", text: "Elk", link: "" },
-  { src: "/portfolio/images/illustration/Sushi.png", alt: "Sushi", text: "Sushi", link: "" },
-  { src: "/portfolio/images/animation/Coolvibes.gif", alt: "Cool Vibes", text: "Cool Vibes", link: "" },
-  { src: "/portfolio/images/animation/explo.gif", alt: "Explosion", text: "Explosion", link: "" },
-  { src: "/portfolio/images/animation/TowerAnimation.gif", alt: "Tower", text: "Tower", link: "" }
+  { src: "/images/drag.png", alt: "", text: "", link: "" },
+  { src: "/images/illustration/Knight2.png", alt: "Knight", text: "Knight", link: "/collections/knights.html" },
+  { src: "/images/animation/HD.gif", alt: "Helldivers", text: "Helldivers", link: "/collections/helldivers.html" },
+  { src: "/images/illustration/Elk_small.png", alt: "Elk", text: "Elk", link: "" },
+  { src: "/images/illustration/Sushi.png", alt: "Sushi", text: "Sushi", link: "" },
+  { src: "/images/animation/Coolvibes.gif", alt: "Cool Vibes", text: "Cool Vibes", link: "" },
+  { src: "/images/animation/explo.gif", alt: "Explosion", text: "Explosion", link: "" },
+  { src: "/images/animation/TowerAnimation.gif", alt: "Tower", text: "Tower", link: "" }
 ];
 
 
@@ -68,9 +68,9 @@ const track = document.getElementById("image-track");
 let currentPercentage = 0;      //tracks the current scroll by percentage
 
 //scrolling starts with the last image as the minimum, and the first image as the maximum
-
+//don't change values from -0 to -100
 const minPercentage = -100;
-const maxPercentage = -7;
+const maxPercentage = -0;
 
 
 /* for tracking the mouse down for dragging */
@@ -118,7 +118,7 @@ const updateTrackPosition = () => {
 
   track.animate(
     {
-      transform: `translate(${currentPercentage - 0}%, -50%)`  //The subtract from current position to affect the starting position. You will also need to change this in the CSS
+      transform: `translate(${currentPercentage - 6}%, -50%)`  //The subtract from current position to affect the starting position. You will also need to change this in the CSS
     },
     { duration: 1200, fill: "forwards" }
   );

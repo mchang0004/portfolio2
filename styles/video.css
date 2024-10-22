@@ -1,0 +1,14 @@
+.video {
+     position: relative;
+
+     overflow: hidden;
+     height: 80%;
+     max-width: 100%;
+     text-align: center;
+
+}
+
+.video video {
+     max-width: 100%;
+     max-height: 100%;
+}
