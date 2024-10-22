@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to bottom, #8a9ca8, #363d40);
+  background: linear-gradient(to bottom, #333, #333);
   color: white;
   font-family: "Montserrat", sans-serif;
 
@@ -19,6 +19,16 @@ h1 {
 
 
 }
+
+
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 100%;
+
+
+}
+
 
 #image-track {
   display: flex;
@@ -65,7 +75,7 @@ h1 {
   text-align: center;
   top: 105%;
   font-size: 70%;
-  color: white;
+  color: #050609;
   text-decoration: underline;
 }
 

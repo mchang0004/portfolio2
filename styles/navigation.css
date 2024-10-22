@@ -83,7 +83,35 @@ li {
   color: #9cf5ff;
 }
 
+.image-link{
+  position: relative;
+  text-align: center;
+  vertical-align: 20%;
+  top: 107%;
+  font-size: 90%;
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 150%;
+  vertical-align:top;
+
+}
+
 
 .link:visited {
   color: #9cf5ff;
+}
+
+#buttonHome img {
+  vertical-align: middle;
+  margin-top: 2px;
+}
+
+#buttonOther img {
+  vertical-align: middle;
+  margin-top: 3px;
 }

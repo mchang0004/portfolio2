@@ -5,7 +5,7 @@ Text
 */
 
 body {
-  background: linear-gradient(to bottom, #8a9ca8, #363d40);
+  background: linear-gradient(to bottom, #333, #333);
   color: white;
   font-family: "Montserrat", sans-serif;
 
@@ -15,10 +15,10 @@ body {
 .main {
 
   min-height: calc(100vh - 100px);
-  margin-bottom: 100px;
-  padding: 16px;
-  margin-top: 30px;
-  height: 100vh;
+
+  padding: 1px;
+  margin-top: 4vh;
+  height: 0vh;
 }
 
 h1 {
@@ -28,6 +28,7 @@ h1 {
 
 
 }
+
 
 p{
   max-width: 800px;
@@ -46,12 +47,12 @@ p{
 }
 
 .link {
-  color: #9cf5ff;
+  color: #00c3d9;
 }
 
 
 .link:visited {
-  color: #9cf5ff;
+  color: #00c3d9;
 }
 
 .basic-text {
@@ -81,4 +82,5 @@ footer {
   text-align: center;
   padding: 20px 0;
   z-index: 25;
+  font-size: 12px;
 }
